@@ -50,5 +50,6 @@ mask3 = (mask >> 8) & 255
 mask4 = mask & 255
 print(f'IP 1 - {lowip}')
 print(f'IP 2 - {highip}')
-print(f'Common Netmask = {mask1}.{mask2}.{mask3}.{mask4}')
-
+# Commenting this out because it don't work in Python 3.5 :(
+# print(f'Common Netmask = {mask1}.{mask2}.{mask3}.{mask4}')
+print(f'Common Netmask = %s.%s.%s.%s' % (mask1, mask2, mask3, mask4))
