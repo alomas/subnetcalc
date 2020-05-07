@@ -28,7 +28,7 @@ mask = 0
 # We will use previousmask since we find out netmask
 # as a post-condition to the loop.
 previousmask = 0
-for bit in range(31, 0, -1):
+for bit in range(31, -1, -1):
     # After first iteration, our mask is
     # 10000000 00000000 00000000 00000000
     # After the second, our mask is
